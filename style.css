@@ -1,0 +1,398 @@
+/* General styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8F0;
+    color: #333;
+ }
+ 
+    /*Header*/
+ 
+ header {
+    background-color: #FF7043;
+    color: white;
+    padding: 20px;
+    text-align: center;
+ }
+ 
+ header img {
+    max-width: 150px;
+    margin-bottom: 10px;
+ }
+ 
+ nav ul {
+    background-color: #FFB182;
+    padding: 10px 20px;
+    border-radius: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+   
+ }
+ nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+ }
+ 
+ nav ul li a:hover {
+    color: #333;
+ }
+
+ /*markerar den sida vi är på genom att sätta ett understräck*/
+.menu .selected {
+    text-decoration-line: underline;
+}
+
+ main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+ }
+ 
+ .welcome-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .welcome-text {
+    flex: 1;
+    font-size: 1.1em;
+  }
+  
+  .welcome-bg-image {
+    flex: 1;
+   
+  }
+  
+  .welcome-bg-image img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0, 0.5);
+  }
+  
+/*linjen i footern*/
+.hr-footer {
+    border-top: 1px solid #ff914d;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    width:90%;
+  }
+
+footer {
+    background-color: #FF7043;
+    color: white;
+    padding: 30px 20px 60px; /* added bottom space! */
+    text-align: center;
+    margin-top: 60px;
+    border-top: 4px solid #FFA270;
+    font-family: sans-serif;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+
+  /******************************************************************/
+
+/*css- för ELINS SIDA (0-3 år)*/
+
+#book-tip{
+  margin-top: 10px;
+  text-align: center;
+  font-size:20px;
+  padding: 10px;
+  color:#b14727;
+}
+
+.booktip-text{
+font-weight: bold;
+font-size: larger;
+}
+
+/*mina 4:a bilder på rad*/
+#pictures_03{
+  flex-wrap: wrap; /*om vi minskar sidan, och bilderna inte får plats bredvid varandra kommer de att hamna under varandra*/
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex; /*sätter rutorna bredvid varandra*/
+  flex-direction: row; /*sätter rutorna bredvid varandra på rad*/
+  justify-content: center; /*sätter rutorna centrerat på sidan*/
+  text-align:center;
+  gap: 40px;
+
+}
+
+#pic_box {
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding:10px;
+}
+
+/*knapparna för LÄS MER*/
+.button {
+  background-color: #ff914d;
+  border: none;
+  color: white;
+  padding: 12px 12px;
+  text-align: center;
+  font-size: 12px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  transform: scale(1.05);
+}
+
+.bok1 {
+  margin-top: 100px;
+  text-align: center;
+  background-color:white;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 100px;
+  border: solid white 2px;
+  width: 60%;
+  height: 600px;
+  border-radius: 25px;
+}
+
+.text{
+  font-size:20px;
+}
+
+/* Döljer innehållet från sidan */
+.popup-hidden {
+  display: none; 
+}
+
+/*när pop-up rutan inte ska synas*/
+.popup {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+/*innehållet i pop-up rutan med info om böckerna*/
+.popup-content {
+  background: rgb(255, 255, 255);/*#f8ac7d;*/
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+
+}
+
+/*klass för att göra fetstilt på författare*/
+.text_title{
+  font-weight: bold;
+}
+
+/**************************************************/
+
+/* CSS för 3-6 år (Louise)*/
+
+h6{ text-align: center;
+    font-size: x-large;
+    font-family: cursive;
+
+}
+
+.section-box {
+    display:flex;
+    
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 100%;
+    margin: 2%;
+    padding: 2%;
+    border: 2%;
+    gap: 10%;
+    font-size: 100%;
+   
+
+  }
+  .image_shadow{
+    box-shadow: 5px 5px 15px rgba(0,0,0, 0.5);
+  }
+
+  .bild-vänster {
+    text-align: right;
+    flex: 1;
+    margin: 1%;
+    padding: 1%;
+    border:1%
+  }
+  .bild-höger {
+    text-align: left;
+    flex: 1;
+    margin: 1%;
+    padding: 1%;
+    border:1%
+  }
+
+  .text-höger {
+    text-align: left;
+    flex: 1;
+    margin: 1%;
+    padding: 1%;
+    border:1%
+  }
+  .text-vänster {
+    text-align: right;
+    flex: 1;
+    margin: 1%;
+    padding: 1%;
+    border:1%
+  }
+
+  /* ************************************************** */
+
+  /* ======= CSS 6-9 ÅR ======= (Simman) */
+
+
+  #six-to-nine h2 {
+    text-align: center;
+    font-family: 'Gill Sans';
+    font-size: 40px;
+    color: green;
+  }
+ 
+
+ #six-to-nine p {
+  text-align: center;
+  font-family: 'Gill Sans';
+  font-size: 20px;
+ }
+
+
+  #six-to-nine .bok-text h4 {
+    text-align: right;
+    font-family: 'Gill Sans';
+    font-size: 20px;
+    color: green;
+ }
+
+#six-to-nine .bok-box { 
+  display: flex; /* Gör så att innehållet (bild & text) lägger sig bredvid varandra på rad */
+  align-items: center; /* gör att bild och text centreras vertikalt - jämnt */
+  margin: 100px 0; /* Ger luft (marginal) ovanför och under varje ruta */
+  gap: 20px; /* lägger 20 pixlar mellan bild och text så att det inte klistrar ihop */
+  max-width: 1000px; /* begränsar hela boxens bredd så att den inte breder ut sig över skärmen */
+}
+
+/* Bok 1 & 2 – bild vänster, text höger */
+#six-to-nine .bok-1, .bok-2 {
+  flex-direction: row; 
+}
+
+/* Bok 3 & 4 – bild höger, text vänster */
+#six-to-nine .bok-3, .bok-4 {
+  flex-direction: row-reverse; /* vänder ordningen så bilden är på höger och text till vänster */
+}
+
+
+#six-to-nine .bok-5 {
+  flex-direction: row; 
+  
+}
+
+/* bildstil för alla böcker */ 
+#six-to-nine .bok-box img { 
+  width: 250px; /* gav dem en standardbredd för enhetlighet */
+  height: auto; /* bevarar proportionerna så att bilden inte ser ihoptryckt ut */
+  border-radius: 8px; /* ger bilderna rundade hörn */
+}
+
+#six-to-nine .bok-text { /* bokbeskrivningens stil */ 
+  max-width: 500px; /* begränsar textens bredd i rutan så att texten håller sig nära bilden */
+  font-family: 'Gill Sans';  
+  font-size: 20px;
+}
+
+  /* CSS for age 9-12 (Celestine) */
+
+  .age-9-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;   /*margin top-bottom  right-left*/
+}
+
+.age-9-12 .intro-text {
+  width: 100%;
+  text-align: left;
+}
+
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.book-card {
+  width: 180px; /* This sets the width of each book card to 180px */
+  background-color: #ffffff;
+  border: 2px solid #ffe4c4;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px #0000001A;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.book-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1em;
+  color: #3c7a89;
+}
+
+.book-card p {
+  font-size: 0.95em;
+  color: #444;
+}

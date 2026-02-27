@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+
+<head>
+    <title>Barnbokstips!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="logo.png" alt="Logga för Barnbokstips" width="100%" height="100%">
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">OM OSS</a></li>
+                <li><a href="0-3year.html" class="selected">0-3 år</a></li>
+                <!--en klass för att kunna markera att det är den sidan vi är på just nu-->
+                <li><a href="3-6.html">3-6 år</a></li>
+                <li><a href="6-9.html">6-9 år</a></li>
+                <li><a href="9-12.html">9-12 år</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div id="container">
+ 
+                <div class="welcome-text" id="book-tip">
+                    <p> <span class="booktip-text">Boktips för barn mellan 0-3år!</span><br><br>
+                        Upptäck de allra första läsupplevelserna tillsammans då barn utvecklas både språkligt<br> och
+                        känslomässigt under de tre första åren.
+                        <br>Ge böckerna liv genom att knacka, peka och sjunga med tillsammans med ditt barn.<br>
+                    </p>
+                </div>
+
+                <!--boxarna med 4 bilder med böcker med en knapp där man får upp den i större ruta med info om boken-->
+                <div id="pictures_03">
+
+                        <div id="pic_box">
+                        <img src="bok1.jpg" alt="Boktips" width="200" height="auto" /><br>
+                        <p><span class="text_title">Titel: </span> Voff! <br>
+                            <strong>Författare: </strong> Marie Helleday<br> Ekwurtzel <br>
+                        </p>
+                        <button class="button button" onclick="readMore('produkt1-text')">LÄS MER</button>
+                    </div>
+
+                    <div id="pic_box">
+                        <img src="bok3.jpg" alt="Boktips" width="200" height="auto"><br>
+                        <p><span class="text_title">Titel: </span> Här kommer Pippi<br> Långstrump <br>
+                            <strong>Författare: </strong> Astrid Lindgren<br>
+                        </p>
+                        <button class="button button" onclick="readMore('produkt2-text')">LÄS MER</button>
+                    </div>
+
+                    <div id="pic_box">
+                        <img src="babblarna.png" alt="Boktips" width="200" height="auto"><br>
+                        <p><span class="text_title">Titel: </span>Tittuuut Babblarna <br>
+                            <strong>Författare: </strong>Anneli Tisell<br><br>
+                        </p>
+                        <button class="button button" onclick="readMore('produkt3-text')">LÄS MER</button>
+                    </div>
+
+                    <div id="pic_box">
+                        <img src="bok2.jpg" alt="Boktips" width="200" height="auto"><br>
+                        <p><span class="text_title">Titel: </span>  Bamse <br>
+                            <strong>Författare: </strong> Dan Andreson<br>Jan Magnusson<br>
+                        </p>
+                        <button class="button button" onclick="readMore('produkt4-text')">LÄS MER</button>
+                    </div></div>
+                </div>
+            </div>
+
+
+            <!--Popup-ruta som inte visas förrän man klickar på LÄS MER, onklick är js-->
+
+            <div id="produkt1-text" class="popup-hidden">
+                <img src="bok1.jpg" alt="Boktips" width="200" height="auto"><br>
+                <p><span class="text_title">Titel: </span> Voff! <br>
+                    <strong>Författare: </strong> Marie Helleday<br> Ekwurtzel <br>
+                </p>
+                <strong>Om: </strong> Följ med den lilla hunden när han busar och leker med de andra djuren.<br> Läs
+                sagan och tryck på knappen.<br>
+
+                Hör du hur hunden skäller?</p>
+                <br><br>
+                <img src="betyg.png" alt="Boktips" width="200" height="auto"><br><br>
+                <button class="button button" onclick="stängRuta()">Stäng</button>
+            </div>
+
+            <div id="produkt2-text" class="popup-hidden">
+                <img src="bok3.jpg" alt="Boktips" width="200" height="auto"><br>
+                <p><span class="text_title">Titel: </span> Här kommer Pippi<br> Långstrump <br>
+                    <strong>Författare: </strong> Astrid Lindgren<br><br>
+                    <strong>Om: </strong> Både stora och små - alla kan väl sången om Pippi! <br>Här som älskad visa
+                    i en egen liten bok med Ingrid Vang Nymans färgstarka bilder.
+                    <br>
+                    Titta, peka och sjung! - den allra första visboken för de allra minsta.
+                </p><br><br>
+                <img src="betyg.png" alt="Boktips" width="200" height="auto"><br><br>
+                <button class="button button" onclick="stängRuta()">Stäng</button>
+            </div>
+
+            <div id="produkt3-text" class="popup-hidden">
+                <img src="bok4.jpg" alt="Boktips" width="200" height="auto"><br>
+                <p><span class="text_title">Titel: </span>Tittuuut Babblarna <br>
+                    <strong>Författare: </strong> Anneli Tisell<br><br>
+                    <strong>Om: </strong> Tittuuut Babblarna! En underbar färgglad kartongbok för de allra minsta
+                    med bästa Babblarna.<br>
+
+                    Lek tittut med era favoritfigurer och visa tidigt hur underbart roligt det kan vara med böcker.
+                    <br>Var gömmer sig Diddi? Och Bobbo? När de kommer fram låter de förstås, <br>
+                    och lockar till ljudlek och språkutveckling.
+                </p><br><br>
+                <img src="betyg.png" alt="Boktips" width="200" height="auto"><br><br>
+                <button class="button button" onclick="stängRuta()">Stäng</button>
+            </div>
+
+            <div id="produkt4-text" class="popup-hidden">
+                <img src="bok2.jpg" alt="Boktips" width="200" height="auto"><br>
+                <p><span class="text_title">Titel: </span>Min första bok om bamse <br>
+                    <strong>Författare: </strong> Dan Andreasson, <br>Jan Magnusson<br><br>
+                    <strong>Om: </strong> Min Första Bok om Bamse är en lättläst bra bok där vi får träffa bamse för
+                    första
+                    gången. <br>Vi får se hur han bor och träffa hans vänner och farmor.
+                </p><br><br>
+                <img src="betyg.png" alt="Boktips" width="200" height="auto"><br><br>
+                <button class="button button" onclick="stängRuta()">Tillbaka</button>
+            </div>
+
+
+
+        </div>
+
+        <div id="popup" class="popup"> <!--vet inte varför koden ser ut såhär, men den måste vara med!!-->
+            <div class="popup-content">
+                <p id="popup-text"></p>
+            </div>
+
+        </div>
+
+        </div>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+<!--footer-->
+<footer>
+    <hr class="hr-footer"> <!--horisontell linje-->
+    <div class="footer-container">
+        <div class="footer-box">
+            Kontakt<br><br>
+            Kvinnofolkhögskolan<br>
+            Första Långgatan 28B<br>
+            41327 Göteborg
+        </div>
+
+        <div class="footer-box">
+            Ansvarig utgivare<br><br>
+            Kvinnofolkhögskolan<br>
+            Första Långgatan 28B<br>
+            41327 Göteborg
+        </div>
+    </div>
+
+
+</footer>
+
+</html>
